@@ -13,25 +13,34 @@ require_once 'vueUser/FormulaireUser.php';
         <div class="test-options">
             <a href="FormulaireUser.php">Voir le test</a>
             <a href="#">Modifier le test</a>
-            <a href="#">Voir les résultats du test</a> 
+            <a href="index.php?action=voirUsers">Voir les résultats du test</a>
 
-            <!-- donc là c'est censé faire en sorte que on voit une liste des Users et qu'on peut cliquer sur un User pour voir -->
-            <tbody>
-            <?php if (!empty($users)): ?>
-                <?php foreach ($users as $user): ?>
-                    <tr>
-                        <td><?= htmlspecialchars($user['id_user']) ?></td>
-                        <td>
-                            <a href="index.php?action=afficherResultats&id=<?= htmlspecialchars($user['id_user']) ?>">Voir</a>
-                        </td>
-                    </tr>
-                <?php endforeach; ?>
-            <?php else: ?>
+    <?php if (isset($_GET['action']) && $_GET['action'] === 'voirUsers'): ?>
+        <table>
+            <thead>
                 <tr>
-                    <td colspan="2">Aucun utilisateur n'a fait le test.</td>
+                    <th>ID Utilisateur</th>
+                    <th>Voir les résultats</th>
                 </tr>
-            <?php endif; ?>
+            </thead>
+            <tbody>
+                <?php if (!empty($users)): ?>
+                    <?php foreach ($users as $user): ?>
+                        <tr>
+                            <td><?= htmlspecialchars($user['id_user']) ?></td>
+                            <td>
+                                <a href="index.php?action=afficherResultats&id=<?= htmlspecialchars($user['id_user']) ?>">Voir</a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <tr>
+                        <td colspan="2">Aucun utilisateur n'a fait le test.</td>
+                    </tr>
+                <?php endif; ?>
             </tbody>
+        </table>
+    <?php endif; ?>
             
             <?php /* foreach ($resultats as $resultat): ?>
                 <tr>

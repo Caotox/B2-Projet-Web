@@ -8,6 +8,7 @@
 <body>
     <h2>Faite notre test de compatibilité amoureuse !</h2>
     <form id="questionnaire-form" method="POST" action="SoumissionsFormulaire.php">
+        <!-- <form id="questionnaire-form" method="POST" action="index.php?action=enregistrerResultat"> -->
         <!-- Question 1 -->
         <div class="question">
             <div id="1">
