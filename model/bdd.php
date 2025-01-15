@@ -5,7 +5,7 @@ class Bdd{
     {
         try
         {
-            $bdd = new PDO('mysql:host=localhost;port=8889;dbname=util', 'root', 'root');
+            $bdd = new PDO('mysql:host=localhost;port=8889;dbname=amour_ouf', 'root', 'root');
             //echo "Connexion OK\n";
             return $bdd;
         }

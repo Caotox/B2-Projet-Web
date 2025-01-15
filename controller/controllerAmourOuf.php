@@ -2,10 +2,10 @@
 require_once 'model/modelAmourOuf.php';
 
 
-class AmourOufController {
+class Controller {
     private $model;
     public function __construct(){
-        $this->model = new AmourOufModel();
+        $this->model = new Model();
     }
     public function inscription(){
         if (isset($_POST['email']) && isset($_POST['password'])){
@@ -18,6 +18,21 @@ class AmourOufController {
         if (isset($_POST['email']) && isset($_POST['password'])){
             $email = $_POST['email'];
             $password = $_POST['password'];
+            $this->model->connexion($email, $password);
+            include_once 'vueUser/ConnexionUser.php';
+        }
+    }
+    public function inscription_admin(){
+        if (isset($_POST['email_admin']) && isset($_POST['passwor_admin'])){
+            $email = $_POST['email_admin'];
+            $password = $_POST['password_admin'];
+            $this->model->inscription($email, $mdp);
+        }
+    }
+    public function connexion_admin(){
+        if (isset($_POST['email_admin']) && isset($_POST['password_admin'])){
+            $email = $_POST['email_admin'];
+            $password = $_POST['password_admin'];
             $this->model->connexion($email, $password);
         }
     }
