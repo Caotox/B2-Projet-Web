@@ -1,0 +1,42 @@
+*{
+    margin :0;
+    padding : 0;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    justify-content:space-around;
+    background-color: #D4CAFE;
+}
+#footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+#carte{
+    width:"100";
+    height :"150";
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#information-contact{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 50;
+    height: 50;
+    margin: 2vh;
+}
