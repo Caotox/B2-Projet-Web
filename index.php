@@ -1,5 +1,6 @@
 <?php
 session_start();
-echo "oui";
+include 'vueUser/headerUser.php';
 include 'controller/routes.php';
+include 'vueUser/footerUser.php';
 ?>
