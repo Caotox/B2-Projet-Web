@@ -57,7 +57,16 @@ function AfficherResultat($resultat) {
     }
 }
 
-echo AfficherResultat('Jessica');
+
+if (isset($_GET['resultat'])) {
+    $resultat = htmlspecialchars($_GET['resultat']);
+    AfficherResultat($resultat);
+} else {
+    echo "<h1>Erreur</h1>";
+    echo "<p>Aucun résultat trouvé.</p>";
+    echo "<a href='FormulaireUser.php'>Retour au formulaire</a>";
+} 
+
 ?>
 
  <!-- faire le FRONT END de la page de résultat -->
