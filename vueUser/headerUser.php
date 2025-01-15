@@ -5,8 +5,9 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <meta name =  "description" content = "La partie header des pages admin">
     <meta name = "author" content = "Meziane Yanis">
+    <base href="/">
     <title>Header user</title>
-    <link rel="stylesheet" href="./CSS/headerUser.css">
+    <link rel="stylesheet" href="./vueUser/CSS/headerUser.css">
 </head>
 
 <header>
@@ -30,7 +31,7 @@
         </article>
 
         <article>
-            <a href="./connexionUserVue.php">
+            <a href="./vueUser/connexionUser.php">
                 <img src="#" alt ="bonhomme pour s'inscrire">
             </a>
         </article>
