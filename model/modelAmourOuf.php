@@ -1,7 +1,7 @@
 <?php
 require_once 'bdd.php';
 
-class User{
+class AmourOufModel{
     private $bdd;
     public function __construct(){
         $this->bdd = Bdd::connexion();
