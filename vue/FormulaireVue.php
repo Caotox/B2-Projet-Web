@@ -1,12 +1,12 @@
 <?php
-// require_once 'script/SoumissionFormulaire.php';
+
 ?>
 
 <h1> Formulaire </h1>
 
 <body>
     <h2>Faite notre test de compatibilité amoureuse !</h2>
-    <form id="questionnaire-form">
+    <form id="questionnaire-form" method="POST" action="SoumissionsFormulaire.php">
         <!-- Question 1 -->
         <div class="question">
             <div id="1">
@@ -34,7 +34,7 @@
         <!-- Question 4 -->
         <div class="question">
             <div id="4">
-            <p>4. De quel pays voudriez-vous être président(e)</p>
+            <p>4. De quel pays voudriez-vous être président(e) ?</p>
             <label><input type="checkbox" name="4" value="France"> France</label><br>
             <label><input type="checkbox" name="4" value="Italie"> Italie</label><br>
             <label><input type="checkbox" name="4" value="Canada"> Canada</label><br>

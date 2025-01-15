@@ -1,4 +1,5 @@
 <?php
+require_once 'vue/FormulaireVue.php';
 
 $formulaire = array(
     "1" => array(
@@ -79,7 +80,7 @@ $formulaire = array(
 
 );
 
-function getFormulaire($formulaire){
+/* function getFormulaire($formulaire){
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $results = array('A' => 0, 'Y' => 0, 'J' => 0);
         foreach ($formulaire as $question => $reponses) {
@@ -104,6 +105,40 @@ function getFormulaire($formulaire){
     }
     $html .= "<input type='submit' value='Envoyer'></form>";
     return $html;
-} 
+} */
+
+function calculerScore($formulaire) {
+    $scores = array('A' => 0, 'Y' => 0, 'J' => 0);
+
+    foreach ($formulaire as $question => $reponses) {
+        if (isset($_POST[$question])) {
+            foreach ($_POST[$question] as $choix) {
+                if (isset($reponses[$choix])) {
+                    $scores[$reponses[$choix]]++;
+                }
+            }
+        }
+    }
+    return $scores;
+}
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $scores = calculerScore($formulaire);
+
+    // Trouver la lettre avec le score le plus élevé
+    $maxScore = max($scores);
+    $dominant = array_keys($scores, $maxScore)[0];
+
+    // Associer la lettre à une personne
+    $personnalites = array(
+        'A' => 'Antoine',
+        'Y' => 'Yanis',
+        'J' => 'Jessica'
+    );
+
+    $resultat = $personnalites[$dominant];
+    echo "<h1>Résultat</h1>";
+    echo "<p>Vous êtes le plus compatible avec : $resultat</p>";
+    echo "<a href='FormulaireVue.php'>Recommencer</a>";
+}
 
 ?>
