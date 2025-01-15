@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFCFD;
+}
+
+.boxResultat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FACEDD;
+    border-radius: 2vh;
+}
+
+.elemInResult{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 75vh;
+    margin: 2vh;
+}
+
+.photo{
+    width: 100;
+    height: 125;
+}
