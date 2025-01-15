@@ -19,13 +19,4 @@ class GestionFormulairesController {
 }
 
 
-
-// Routes Resultats
-public static function get_resultat(){ // Récupérer les résultats d'un user en fonction de son id
-    $resultat = $this->bdd->prepare('SELECT * FROM resultat WHERE id_user = ?');
-    $resultat->execute(array($_POST['id']));
-    return $resultat->fetchAll();
-}
-
-
 ?>

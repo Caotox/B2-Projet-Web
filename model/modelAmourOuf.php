@@ -1,8 +1,7 @@
 <?php
 require_once 'bdd.php';
 
-
-class AmourOufModel{
+class Model{
     private $bdd;
     public function __construct(){
         $this->bdd = Bdd::connexion();
@@ -26,7 +25,6 @@ class AmourOufModel{
     public static function deconnexion(){ // Déconnexion
         session_destroy();
     }
-
     // Routes Users
     public static function get_user(){ // Récupérer un user en fonction de son id
         $user = $this->bdd->prepare('SELECT * FROM user WHERE id = ?');
