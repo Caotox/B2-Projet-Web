@@ -134,11 +134,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'Y' => 'Yanis',
         'J' => 'Jessica'
     );
-
+/*
     $resultat = $personnalites[$dominant];
     echo "<h1>Résultat</h1>";
     echo "<p>Vous êtes le plus compatible avec : $resultat</p>";
     echo "<a href='FormulaireVue.php'>Recommencer</a>";
+*/
+
 }
 
 ?>
