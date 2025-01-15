@@ -12,17 +12,19 @@
                 <h1>Inscription</h1>
         </article>
         <article>
-            <form action="" method="post">
+            <form action="" method="POST">
 
-                    <input type="text" name="firstname" id="firstname" minlength = 1 maxlength = 50 placeholder = "Ton prénom...">
+                    <!--<input type="text" name="firstname" id="firstname" minlength = 1 maxlength = 50 placeholder = "Ton prénom...">
                 <br>
-                    <input type="text" name="lastname" id="lastname" minlength = 1 maxlength = 50 placeholder = "Ton nom...">
+                    <input type="text" name="lastname" id="lastname" minlength = 1 maxlength = 50 placeholder = "Ton nom...">-->
                 <br>
-                    <input type="email" name="email-inscription" id="email-inscription" minlenght = 1 maxlength = 50 placeholder = "Ton mail...">
+                <label for="email">Email</label>
+                    <input type="email" name="email" id="email" minlenght = 1 maxlength = 50 placeholder = "Ton mail...">
                 <br>
-                    <input type="password" name="password_inscription" id="password_inscription" minlength = 6 maxlength = 50 placeholder = "Ton Mot De Passe...">
+                <label for="mdp">Mot de Passe</label>
+                    <input type="password" name="mdp" id="mdp" minlength = 6 maxlength = 50 placeholder = "Ton Mot De Passe...">
                 <br>
-                    <input type="password" name="conf_password" id="conf_password" minlength = 6 maxlength = 50 placeholder = "Confirmation de ton Mot De Passe...">
+                    <!--<input type="password" name="conf_password" id="conf_password" minlength = 6 maxlength = 50 placeholder = "Confirmation de ton Mot De Passe...">-->
                 <br>
                     <input type="submit" value="Soumettre">
             </form>

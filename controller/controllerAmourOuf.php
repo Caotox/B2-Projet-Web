@@ -7,19 +7,23 @@ class Controller {
     public function __construct(){
         $this->model = new Model();
     }
-    public function inscription(){
+    public function inscription_user(){
+        include_once 'vueUser/InscriptionUser.php';
+        echo "ça inscrit";
         if (isset($_POST['email']) && isset($_POST['password'])){
+            echo "ça rentre dans isset";
             $email = $_POST['email'];
             $password = $_POST['password'];
-            $this->model->inscription($email, $mdp);
+            echo $email . " " . $password;
+            $this->model->inscription_user($email, $mdp);
         }
     }
-    public function connexion(){
+    public function connexion_user(){
+        include_once 'vueUser/ConnexionUser.php';
         if (isset($_POST['email']) && isset($_POST['password'])){
             $email = $_POST['email'];
             $password = $_POST['password'];
-            $this->model->connexion($email, $password);
-            include_once 'vueUser/ConnexionUser.php';
+            $this->model->connexion_user($email, $password);
         }
     }
     public function inscription_admin(){

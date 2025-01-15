@@ -1,17 +1,22 @@
 <?php
-$route = $_GET['route'] ?? 'connexionUser';
+$route = $_GET['route'] ?? 'accueil';
 //echo $route . "\n";
 switch ($route){
     case 'accueil':
-        require 'view/accueil.php';
+        require 'vueUser/accueil.php';
         break;
 
     case 'connexionUser':
         require 'controller/controllerAmourOuf.php';
         $var = new Controller();
-        $var->connexion();
+        $var->connexion_user();
         break;
-
+    
+    case 'inscriptionUser':
+        require 'controller/controllerAmourOuf.php';
+        $var = new Controller();
+        $var->inscription_user();
+        break;
     default:
         require 'view/erreur.php';
 }
