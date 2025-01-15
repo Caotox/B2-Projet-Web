@@ -1,22 +1,20 @@
 <?php
-include_once 'model/modelAmourOuf.php';
+include_once '../model/modelAmourOuf.php';
 
 class GestionFormulairesController {
-    public function afficherResultats() {
-        if (isset($_POST['id']) && !empty($_POST['id'])) {
-            $model = new ResultatModel(); 
-            $resultats = $model->get_resultat(); 
+    public function afficherResultats($id = null) {
+        if ($id !== null && !empty($id)) {
+            $model = new Model(); 
+            $resultats = $model->get_resultat($id); 
 
             if (!empty($resultats)) {
-                require_once 'vueAdmin/GestionFormulaires.php';
+                return $resultats; 
             } else {
-                echo '<p>Aucun résultat trouvé pour cet utilisateur.</p>';
+                return '<p>Aucun résultat trouvé pour cet utilisateur.</p>';
             }
         } else {
-            echo '<p>Erreur : Aucun ID utilisateur spécifié.</p>';
+            return '<p>Erreur : Aucun ID utilisateur spécifié.</p>';
         }
     }
 }
-
-
 ?>
