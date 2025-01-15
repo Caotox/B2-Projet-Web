@@ -22,4 +22,5 @@ function AfficherResultat($resultat) {
 
 ?>
 
+
  <!-- faire le FRONT END de la page de résultat -->

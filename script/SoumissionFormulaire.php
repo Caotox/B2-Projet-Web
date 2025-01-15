@@ -121,6 +121,7 @@ function calculerScore($formulaire) {
     }
     return $scores;
 }
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $scores = calculerScore($formulaire);
 

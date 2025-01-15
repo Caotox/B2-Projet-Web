@@ -1,6 +1,7 @@
 <?php
 require_once 'bdd.php';
 
+
 class AmourOufModel{
     private $bdd;
     public function __construct(){
