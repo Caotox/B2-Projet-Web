@@ -11,8 +11,7 @@
         <article id="inscription-title">
                 <h1>Inscription</h1>
         </article>
-        <article>
-            <form action="" method="POST">
+            <form method="POST">
 
                     <!--<input type="text" name="firstname" id="firstname" minlength = 1 maxlength = 50 placeholder = "Ton prénom...">
                 <br>
@@ -28,7 +27,6 @@
                 <br>
                     <input type="submit" value="Soumettre">
             </form>
-        </article>
     </section>
 </body>
 </html>
