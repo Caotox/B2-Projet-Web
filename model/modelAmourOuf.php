@@ -1,23 +1,25 @@
 <?php
 require_once 'bdd.php';
 
-class Model{
+class Model {
     private $bdd;
     public function __construct(){
         $this->bdd = Bdd::connexion();
     }
     // Routes pour Connexion / Inscription
-    public static function connexion(){ // Connexion (vérif email et mdp)
+    public static function connexion_user(){ // Connexion (vérif email et mdp)
         $user = $this->bdd->prepare('SELECT * FROM user WHERE email ? AND password = ?');
         $user->execute(array($_POST['email'], $_POST['password']));
     }
-    public static function inscription(){ // Inscription (vérif email unique) 
+    public static function inscription_user(){ // Inscription (vérif email unique) 
         $existe = $this->bdd->prepare('SELECT * FROM user WHERE email = ?');
+        echo "On arrive dans le model";
         $existe->execute(array($_POST['email']));
-        if($exist->rowCount() > 0){
+        if($existe->rowCount() > 0){
             echo "Cet email est déjà utilisé";
         }
         else{
+            echo "Cet email est disponible";
             $user = $this->bdd->prepare('INSERT INTO user (email, password) VALUES (?, ?)');
             $user->execute(array($_POST['email'], $_POST['password']));
         }
