@@ -7,7 +7,7 @@
 
 <body>
     <h2>Faite notre test de compatibilité amoureuse !</h2>
-    <form id="questionnaire-form" method="POST" action="SoumissionsFormulaire.php">
+    <form id="questionnaire-form" method="POST" action="SoumissionFormulaire.php">
         <!-- <form id="questionnaire-form" method="POST" action="index.php?action=enregistrerResultat"> -->
         <!-- Question 1 -->
         <div class="question">
@@ -130,7 +130,7 @@
             <label><input type="checkbox" name="15" value="Tulipes"> Tulipes</label><br>
         </div>
 
-        <button type="button" onclick="afficherSelections()">Soumettre</button>
+        <button type="submit">Soumettre</button>
     </form>
 
 
