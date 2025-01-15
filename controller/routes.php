@@ -7,7 +7,7 @@ switch ($route){
         break;
 
     case 'connexionUser':
-        require 'controller/controllerAmourOuf.php';
+        require './controller/controllerAmourOuf.php';
         $var = new Controller();
         $var->connexion_user();
         break;
