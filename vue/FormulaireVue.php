@@ -1,5 +1,5 @@
 <?php
-require_once 'script/SoumissionFormulaire.php';
+// require_once 'script/SoumissionFormulaire.php';
 ?>
 
 <h1> Formulaire </h1>
