@@ -52,6 +52,6 @@ class Controller {
     }
     public function get_all_users() {
         $users = $this->model->get_all_users(); 
-        return $users; 
+        include_once 'view/todolist.php';
     }
 }
