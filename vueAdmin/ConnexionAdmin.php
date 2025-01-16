@@ -11,6 +11,14 @@
 <body>
 
         <main>
+        <section id="boxUser">
+            <article class = "link">
+                <h3>Retour vers l'accueil</h3>
+                    <nav>
+                        <a href="?route=accueilAdmin">Accueil</a>
+                    </nav>
+            </article>
+            </section>
             <section id = "connexionInscriptionSection">
                 <article class = "connexionInscriptionBlock">
                     <h1>Connexion</h1>

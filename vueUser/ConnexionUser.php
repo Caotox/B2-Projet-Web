@@ -11,6 +11,21 @@
 <body>
 
         <main>
+        <section id="boxUser">
+            <article class = "link">
+                <h3>Retour vers l'accueil</h3>
+                    <nav>
+                        <a href="?route=accueil">Accueil</a>
+                    </nav>
+            </article>
+
+            <article class = "link">
+                <h3>Pour t'inscrire</h3>
+                    <nav>
+                        <a href="?route=inscriptionUser">Inscription</a>
+                    </nav>
+            </article>
+            </section>
             <section id = "connexionInscriptionSection">
                 <article class = "connexionInscriptionBlock">
                     <h1>Connexion</h1>
