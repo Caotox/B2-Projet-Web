@@ -25,6 +25,24 @@ class Model {
             return ['success' => false, 'message' => "Erreur lors de la connexion : " . $e->getMessage()];
         }
     }
+    public function connexion_admin($email, $mdp) {
+        try {
+            $user = $this->bdd->prepare('SELECT * FROM admins WHERE email_admin = ?');
+            $user->execute([$email]);
+            $result = $user->fetch(PDO::FETCH_ASSOC);
+            if ($result) {
+                if ($mdp == $result['mdp_admin']) {
+                    return ['success' => true, 'message' => "Connexion réussie !"];
+                } else {
+                    return ['success' => false, 'message' => "Mot de passe incorrect."];
+                }
+            } else {
+                return ['success' => false, 'message' => "Adresse email introuvable."];
+            }
+        } catch (PDOException $e) {
+            return ['success' => false, 'message' => "Erreur lors de la connexion : " . $e->getMessage()];
+        }
+    }
     public function inscription_user($email, $mdp){ // Inscription (vérif email unique) 
         $existe = $this->bdd->prepare('SELECT * FROM users WHERE email = ?');
         $existe->execute(array($email));

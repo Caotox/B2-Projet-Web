@@ -39,7 +39,7 @@ class Controller {
             $email = $_POST['email_admin'];
             $mdp = $_POST['mdp_admin'];
             echo $email . " " . $mdp;
-            $result = $this->model->connexion_user($email, $mdp);
+            $result = $this->model->connexion_admin($email, $mdp);
             if ($result['success']) {
                 echo $result['message'];
                 //header('Location: ?route=dashboard');
