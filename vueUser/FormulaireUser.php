@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="CSS/FormulaireStyle.css">
 <h1>Formulaire</h1>
 
 <body>
@@ -125,4 +126,31 @@
 
         <button type="submit">Soumettre</button>
     </form>
+
+    <script>
+    document.getElementById("questionnaire-form").addEventListener("submit", function(event) {
+        // récupère toutes les questions
+        const questions = document.querySelectorAll(".question");
+        let allAnswered = true;
+
+        // verifie si toutes les questions ont une réponse sélectionnée
+        questions.forEach(question => {
+            const inputs = question.querySelectorAll("input[type='radio']");
+            const isAnswered = Array.from(inputs).some(input => input.checked);
+            if (!isAnswered) {
+                allAnswered = false;
+                question.style.border = "2px solid red"; // ajt un indicateur visuel si non répondu
+            } else {
+                question.style.border = "none"; // enlever l'indicateur visuel si corrigé
+            }
+        });
+
+        // si une ou plusieurs questions n'ont pas été répondues, empêcher la soumission
+        if (!allAnswered) {
+            event.preventDefault();
+            alert("Veuillez répondre à toutes les questions avant de soumettre le formulaire.");
+        }
+    });
+</script>
+
 </body>
