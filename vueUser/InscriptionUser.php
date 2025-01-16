@@ -11,6 +11,11 @@
         <article id="inscription-title">
                 <h1>Inscription</h1>
         </article>
+        <article id="presentation">
+            <p>
+                Bienvenue sur <strong>L'amour Ouf</strong>, et découvrez en un clic vos meilleures comptabilités avec nos experts en amour !
+            </p>
+        </article>
             <form method="POST">
 
                     <!--<input type="text" name="firstname" id="firstname" minlength = 1 maxlength = 50 placeholder = "Ton prénom...">

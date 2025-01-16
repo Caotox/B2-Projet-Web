@@ -10,6 +10,11 @@
         <article id="connexion-title">
                 <h1>Connexion</h1>
         </article>
+        <article id="presentation">
+            <p>
+                Bienvenue sur <strong>L'amour Ouf</strong>, et découvrez en un clic vos meilleures comptabilités avec nos experts en amour !
+            </p>
+        </article>
         <article>
             <form method="post">
                 <label for="email">Email</label>
