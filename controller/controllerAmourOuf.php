@@ -51,4 +51,8 @@ class Controller {
             }
         }
     }
+    public function get_all_users() {
+        $result = $this->model->get_all_users();
+        include_once 'vueAdmin/voirUsers.php';
+    }
 }
