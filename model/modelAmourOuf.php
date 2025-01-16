@@ -65,6 +65,7 @@ class Model {
         return $user->fetch();
     }
     public function get_all_users(){ // Récupérer tous les users existants
+        echo "et ça arrive là";
         $users = $this->bdd->query('SELECT * FROM users');
         return $users->fetchAll();
     }
