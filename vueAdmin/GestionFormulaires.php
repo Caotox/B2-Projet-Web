@@ -30,7 +30,7 @@ if (isset($_GET['id'])) {
     <div class="test">
         <div class="test-title">Test 1 : Test de compatibilité amoureuse</div>
         <div class="test-options">
-            <a href="FormulaireUser.php">Voir le test</a>
+            <a href="../vueAdmin/FormAdmin.php">Voir le test</a>
             <a href="#">Modifier le test</a>
             <a href="GestionFormulaires.php?action=voirUsers">Voir les résultats du test</a>
         </div>

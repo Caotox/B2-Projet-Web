@@ -60,16 +60,16 @@ class Model {
     }
     // Routes Users
     public function get_user(){ // Récupérer un user en fonction de son id
-        $user = $this->bdd->prepare('SELECT * FROM user WHERE id = ?');
+        $user = $this->bdd->prepare('SELECT * FROM users WHERE id = ?');
         $user->execute(array($_POST['id']));
         return $user->fetch();
     }
     public function get_all_users(){ // Récupérer tous les users existants
-        $users = $this->bdd->query('SELECT * FROM user');
+        $users = $this->bdd->query('SELECT * FROM users');
         return $users->fetchAll();
     }
     public function delete_user(){ // Supprimer un user en fonction de son id
-        $user = $this->bdd->prepare('DELETE user WHERE id = ?');
+        $user = $this->bdd->prepare('DELETE users WHERE id = ?');
         $user->execute(array($_POST['id']));
     }
 
@@ -85,8 +85,8 @@ class Model {
         return $resultat->fetchAll();
     }
     public function send_resultat(){ // Envoyer un résultat (et le lier au user)
-        $result = $this->bdd->prepare('INSERT INTO resultat (id_user, id_test, resultat) VALUES (?, ?, ?)');
-        $result->execute(array($_POST['id_user'], $_POST['id_test'], $_POST['resultat']));
+        $result = $this->bdd->prepare('INSERT INTO reponses (id_user, comptabilite, degre) VALUES (?, ?, ?)');
+        $result->execute(array($_POST['id_user'], $_POST['comptabilite'], $_POST['degre']));
     }
 }
 ?>
