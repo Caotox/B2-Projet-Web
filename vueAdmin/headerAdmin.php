@@ -3,35 +3,28 @@
 <head>
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <meta name =  "description" content = "La partie header des pages admin">
-    <meta name = "author" content = "Meziane Yanis">
-    <title>Header admin</title>
-    <link rel="stylesheet" href="./CSS/headerAdmin.css">
+    <title>Header user</title>
+    <link rel="stylesheet" href="./vueAdmin/CSS/headerAdmin.css">
 </head>
 
 <header>
     <section id="elem-header-admin">
         <article>
-            <a href="#">
-                <img src="#" alt="logo">
+            <a href="./vueAdmin/accueil.php">
+                <img src="./vueAdmin/CSS/photo_chat_site.png" alt="logo">
             </a>
         </article>
 
         <article>
             <div id="header-admin-title">
-                    <h1>Titre</h1>
+                    <h1>L'amour au premier clic existe</h1>
                 <br>
-                    <p>
-                        <em>
-                            "L'amour au premier clique existe"
-                        </em>
-                    </p>
             </div>
         </article>
 
         <article>
-            <a href="./connexionAdminVue.php">
-                <img src="#" alt ="bonhomme pour s'inscrire">
+            <a href="./vueAdmin/connexionAdmin.php">
+                <img src="./vueAdmin/CSS/photo_bonhomme_site.png" alt ="bonhomme pour s'inscrire">
             </a>
         </article>
     </section>

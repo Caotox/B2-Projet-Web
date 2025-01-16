@@ -1,4 +1,4 @@
-        <link rel="stylesheet" href="./CSS/footerAdmin.css">
+<link rel="stylesheet" href="./vueAdmin/CSS/footerAdmin.css">
         
         <footer>
             <section id="footer">
@@ -9,12 +9,12 @@
                 <article  id="contact">
                     <h1>Contact</h1>
                         <div id="information-contact">
-                            <img src="#" alt="logo-mail" class="logo">
+                            <img src="./vueAdmin/CSS/logo_mail_site.png" alt="logo-mail" class="logo">
                                 <p>
                                     aaaa.aaaa@gmail.com 
                                 </p>
                             
-                            <img src="#" alt="logo-telephone" class="logo">
+                            <img src="./vueAdmin/CSS/photo_phone_site.jpg" alt="logo-telephone" class="logo">
                                 <p>
                                     06.06.06.06.06
                                 </p>
