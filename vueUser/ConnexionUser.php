@@ -5,7 +5,7 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <meta name = "description" content = "La page connexion des Users">
     <meta name = "author" content = "MEZIANE Yanis">
-    <link rel="stylesheet" href="./vueUser/CSS/connexionUser.css">
+    <link rel="stylesheet" href="CSS/connexionUser.css">
     <title>Connexion</title>
 </head>
 <body>

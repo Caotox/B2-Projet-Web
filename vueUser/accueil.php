@@ -5,7 +5,7 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <meta name =  "description" content = "La partie header des pages admin">
     <meta name = "author" content = "Meziane Yanis">
-    <link rel="stylesheet" href="CSS/accueil.css">
+    <link rel="stylesheet" href="./vueUser/CSS/accueil.css">
     <title>Page d'accueil</title>
 </head>
     <body>
