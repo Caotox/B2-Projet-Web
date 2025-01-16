@@ -54,6 +54,6 @@ class Controller {
     public function get_all_users() {
         echo "ça vient ici";
         $users = $this->model->get_all_users();
-        include_once 'vueAdmin/voirUsers.php';
+        //include_once 'vueAdmin/voirUsers.php';
     }
 }
