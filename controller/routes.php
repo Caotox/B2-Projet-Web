@@ -1,6 +1,6 @@
 <?php
 $route = $_GET['route'] ?? 'accueil';
-echo $route . "\n";
+// echo $route . "\n";
 switch ($route){
     case 'accueil':
         require 'vueUser/accueil.php';
