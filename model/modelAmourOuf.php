@@ -64,11 +64,11 @@ class Model {
         $user->execute(array($id));
         return $user->fetch();
     }
-    public function get_all_users(){ // Récupérer tous les users existants
-        echo "et ça arrive là";
-        $users = $this->bdd->query('SELECT * FROM users')->fetchAll(PDO::FETCH_ASSOC);
-        return $users;
+    public function get_all_users() {
+        $query = $this->bdd->query('SELECT * FROM users'); 
+        return $query->fetchAll(PDO::FETCH_ASSOC); 
     }
+    
     public function delete_user($id){ // Supprimer un user en fonction de son id
         $user = $this->bdd->prepare('DELETE users WHERE id = ?');
         $user->execute(array($id));

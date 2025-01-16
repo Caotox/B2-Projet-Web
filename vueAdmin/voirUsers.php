@@ -1,8 +1,8 @@
-
 <?php 
 require 'controller/controllerAmourOuf.php';
-$users = new Controller();
-$users->get_all_users();
+
+$controller = new Controller();
+$users = $controller->get_all_users(); 
 ?>
 <!DOCTYPE html>
 <html lang="fr">
