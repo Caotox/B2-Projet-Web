@@ -1,7 +1,6 @@
 <?php
 require_once 'model/modelAmourOuf.php';
 
-
 class Controller {
     private $model;
     public function __construct(){
