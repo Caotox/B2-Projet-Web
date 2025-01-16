@@ -27,7 +27,7 @@ if (isset($_GET['id'])) {
 </head>
 <body>
     <h1>Gestion des formulaires</h1>
-    <a href="voirUsers.php">Voir Users</a>
+    <a href="/indexAdmin.php?route=voirUsers">Voir Users</a>
     <div class="test">
         <div class="test-title">Test 1 : Test de compatibilité amoureuse</div>
         <div class="test-options">

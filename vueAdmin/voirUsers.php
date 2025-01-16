@@ -1,8 +1,3 @@
-<?php
-require 'controller/controllerAmourOuf.php'; 
-$controller = new Controller();
-$users = $controller->get_all_users();
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

@@ -66,8 +66,8 @@ class Model {
     }
     public function get_all_users(){ // Récupérer tous les users existants
         echo "et ça arrive là";
-        $users = $this->bdd->query('SELECT * FROM users');
-        return $users->fetchAll();
+        $users = $this->bdd->query('SELECT * FROM users')->fetchAll(PDO::FETCH_ASSOC);
+        return $users;
     }
     public function delete_user($id){ // Supprimer un user en fonction de son id
         $user = $this->bdd->prepare('DELETE users WHERE id = ?');
