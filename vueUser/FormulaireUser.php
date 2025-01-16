@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="CSS/FormulaireStyle.css">
+<link rel="stylesheet" href="./vueUser/CSS/FormulaireStyle.css">
 <h1>Formulaire</h1>
 
 <body>
