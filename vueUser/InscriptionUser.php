@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "La page connexion des Users">
+    <meta name = "author" content = "MEZIANE Yanis">
+    <link rel="stylesheet" href="./vueUser/CSS/connexionUser.css">
     <title>Inscription</title>
 </head>
 
+<main>
 <body>
-    <section>
-        <article id="inscription-title">
+    <section id = "connexionInscriptionSection">
+        <article class="connexionInscriptionBlock">
                 <h1>Inscription</h1>
         </article>
-        <article id="presentation">
+        <article class = "connexionInscriptionBlock">
             <p>
                 Bienvenue sur <strong>L'amour Ouf</strong>, et découvrez en un clic vos meilleures comptabilités avec nos experts en amour !
             </p>
         </article>
+
+        <article>
             <form method="POST">
 
                     <!--<input type="text" name="firstname" id="firstname" minlength = 1 maxlength = 50 placeholder = "Ton prénom...">
@@ -30,8 +36,12 @@
                 <br>
                     <!--<input type="password" name="conf_password" id="conf_password" minlength = 6 maxlength = 50 placeholder = "Confirmation de ton Mot De Passe...">-->
                 <br>
-                    <input type="submit" value="Soumettre">
+                    <article>
+                        <input type="submit" value="Soumettre">
+                    </article>
             </form>
+        </article>
     </section>
+</main>
 </body>
 </html>

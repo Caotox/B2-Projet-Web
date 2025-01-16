@@ -11,11 +11,11 @@
 <body>
 
         <main>
-            <section id = "connexionSection">
-                <article class = "connexionBlock">
+            <section id = "connexionInscriptionSection">
+                <article class = "connexionInscriptionBlock">
                     <h1>Connexion</h1>
                 </article>
-                <article class = "connexionBlock">
+                <article class = "connexionInscriptionBlock">
                     <p>
                         Bienvenue sur <strong>L'amour Ouf</strong> ! 
                     </p>
