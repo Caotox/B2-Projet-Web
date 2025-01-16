@@ -11,10 +11,12 @@
                 <h1>Connexion</h1>
         </article>
         <article>
-            <form action="" method="post">
-                    <input type="email" name="email-user-connexion" id="email-user-connexion" minlenght = 1 maxlength = 50 placeholder = "Ton mail...">
+            <form method="post">
+                <label for="email">Email</label>
+                    <input type="email" name="email" id="email" minlenght = 1 maxlength = 50 placeholder = "Ton mail...">
                 <br>
-                    <input type="password" name="password-user-connexion" id="password-user-connexion" minlength = 6 maxlength = 50 placeholder = "Ton Mot De Passe...">
+                <label for="mdp">Mot de Passe</label>
+                    <input type="password" name="mdp" id="mdp" minlength = 6 maxlength = 50 placeholder = "Ton Mot De Passe...">
                 <br>
                     <input type="submit" value="Soumettre">
             </form>

@@ -7,21 +7,21 @@ class Model {
         $this->bdd = Bdd::connexion();
     }
     // Routes pour Connexion / Inscription
-    public static function connexion_user(){ // Connexion (vérif email et mdp)
+    public static function connexion_user($email, $mdp){ // Connexion (vérif email et mdp)
         $user = $this->bdd->prepare('SELECT * FROM user WHERE email ? AND password = ?');
-        $user->execute(array($_POST['email'], $_POST['password']));
+        $user->execute(array($email, $mdp));
     }
-    public static function inscription_user(){ // Inscription (vérif email unique) 
+    public static function inscription_user($email, $mdp){ // Inscription (vérif email unique) 
         $existe = $this->bdd->prepare('SELECT * FROM user WHERE email = ?');
         echo "On arrive dans le model";
-        $existe->execute(array($_POST['email']));
+        $existe->execute(array($email));
         if($existe->rowCount() > 0){
             echo "Cet email est déjà utilisé";
         }
         else{
             echo "Cet email est disponible";
-            $user = $this->bdd->prepare('INSERT INTO user (email, password) VALUES (?, ?)');
-            $user->execute(array($_POST['email'], $_POST['password']));
+            $user = $this->bdd->prepare('INSERT INTO user (email, mdp) VALUES (?, ?)');
+            $user->execute(array($email, $mdp));
         }
     }
     public static function deconnexion(){ // Déconnexion
