@@ -3,9 +3,6 @@
 <head>
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <meta name =  "description" content = "La partie header des pages admin">
-    <meta name = "author" content = "Meziane Yanis">
-    <base href="/">
     <title>Header user</title>
     <link rel="stylesheet" href="./vueUser/CSS/headerUser.css">
 </head>
@@ -13,26 +10,21 @@
 <header>
     <section id="elem-header-user">
         <article>
-            <a href="#">
-                <img src="#" alt="logo">
+            <a href="./vueUser/accueil.php">
+                <img src="./vueUser/CSS/photo_chat_site.png" alt="logo">
             </a>
         </article>
 
         <article>
             <div id="header-user-title">
-                    <h1>Titre</h1>
+                    <h1>L'amour au premier clic existe</h1>
                 <br>
-                    <p>
-                        <em>
-                            "L'amour au premier clique existe"
-                        </em>
-                    </p>
             </div>
         </article>
 
         <article>
             <a href="./vueUser/connexionUser.php">
-                <img src="#" alt ="bonhomme pour s'inscrire">
+                <img src="./vueUser/CSS/photo_bonhomme_site.png" alt ="bonhomme pour s'inscrire">
             </a>
         </article>
     </section>
