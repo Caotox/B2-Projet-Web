@@ -12,6 +12,9 @@ switch ($route){
         $users = new Controller();
         $users->get_all_users();
         break;
+    case 'formulaires':
+        require 'vueAdmin/GestionFormulaires.php';
+        break;
     default:
         require 'view/erreur.php';
         break;
