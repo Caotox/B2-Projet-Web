@@ -28,7 +28,7 @@
                 <article>
                     <form method="post">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" minlenght = 1 maxlength = 50 placeholder = "Ton mail...">
+                        <input type="email" name="email" id="email" minlength = 1 maxlength = 50 placeholder = "Ton mail...">
             <br>
                         <label for="mdp">Mot de Passe</label>
                         <input type="password" name="mdp" id="mdp" minlength = 6 maxlength = 50 placeholder = "Ton Mot De Passe...">
