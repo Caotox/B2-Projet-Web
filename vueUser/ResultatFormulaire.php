@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../CSS/ResultatFormulaire.css">
+<link rel="stylesheet" href="CSS/ResultatFormulaire.css">
 
 <?php
 
@@ -38,7 +38,7 @@ function AfficherResultat($resultat) {
         echo "<section class ='boxResultat'>";
         echo "<article class= 'elemInResult'>";
             echo "<h1 id='title'>Votre êtes plus proche que vous ne le pensez avec votre âme sœur</h1>";
-                echo "<img src='#' alt='photo' class='photo'>";
+                echo "<img src='CSS/photo_jessica_site.jpg' alt='photo' class='photo'>";
                 echo "<p>Vous êtes le plus compatible avec : Jessica </p>";
                 echo "<br>";
                 echo "<p>
