@@ -35,15 +35,16 @@ class Controller {
     }
     public function connexion_admin() {
         include_once 'vueAdmin/ConnexionAdmin.php';
-        if (isset($_POST['email_admin']) && isset($_POST['mdp_admin'])) {
-            $email = $_POST['email_admin'];
-            $mdp = $_POST['mdp_admin'];
+        if (isset($_POST['email']) && isset($_POST['mdp'])) {
+            echo "test";
+            $email = $_POST['email'];
+            $mdp = $_POST['mdp'];
             echo $email . " " . $mdp;
             $result = $this->model->connexion_admin($email, $mdp);
             if ($result['success']) {
                 echo $result['message'];
                 //header('Location: ?route=dashboard');
-                //header('Location: vueUser/FormulaireUser.php');
+                header('Location: vueAdmin/GestionFormulaires.php');
                 exit();
             } else {
                 echo $result['message'];
