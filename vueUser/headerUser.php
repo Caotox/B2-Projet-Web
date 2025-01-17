@@ -10,7 +10,7 @@
 <header>
     <section id="elem-header-user">
         <article>
-            <a href="./vueUser/accueil.php">
+            <a href="?route=accueil"></a>
                 <img src="./vueUser/CSS/photo_chat_site.png" alt="logo">
             </a>
         </article>
@@ -23,7 +23,7 @@
         </article>
 
         <article>
-            <a href="./vueUser/connexionUser.php">
+            <a href="?route=connexionUser"></a>
                 <img src="./vueUser/CSS/photo_bonhomme_site.png" alt ="bonhomme pour s'inscrire">
             </a>
         </article>

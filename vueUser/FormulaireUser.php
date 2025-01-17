@@ -1,3 +1,7 @@
+<?php 
+include 'vueUser/headerUser.php';
+?>
+
 <link rel="stylesheet" href="CSS/FormulaireStyle.css">
 <h1>Formulaire</h1>
 
@@ -152,5 +156,9 @@
         }
     });
 </script>
+
+<?php
+include 'vueUser/footerUser.php';
+?>
 
 </body>
