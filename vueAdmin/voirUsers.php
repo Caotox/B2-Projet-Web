@@ -1,13 +1,12 @@
 <?php
-require_once '../controller/GestionFormController.php';
 require_once '../controller/GestionUsersController.php';
 
 $userController = new UserController();
-$formulaireController = new GestionFormulairesController();
 $action = 'voirUsers';
 
 $users = [];
 if (isset($_GET['action']) && $_GET['action'] === 'voirUsers') {
+    echo "ça passe ici";
     $users = $userController->afficherTousLesUsers(); 
 }
 

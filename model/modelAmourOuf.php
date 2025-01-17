@@ -1,5 +1,6 @@
 <?php
 require_once 'bdd.php';
+echo "Model chargé";
 
 class Model {
     private $bdd;
