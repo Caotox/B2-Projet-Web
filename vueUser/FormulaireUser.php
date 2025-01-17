@@ -1,5 +1,5 @@
 <?php 
-include 'vueUser/headerUser.php';
+include 'headerUser.php';
 ?>
 
 <link rel="stylesheet" href="CSS/FormulaireStyle.css">
@@ -158,7 +158,7 @@ include 'vueUser/headerUser.php';
 </script>
 
 <?php
-include 'vueUser/footerUser.php';
+include 'footerUser.php';
 ?>
 
 </body>
