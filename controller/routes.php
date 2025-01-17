@@ -11,11 +11,18 @@ switch ($route){
         $var = new Controller();
         $var->connexion_user();
         break;
-
     case 'inscriptionUser':
         require 'controller/controllerAmourOuf.php';
         $var = new Controller();
         $var->inscription_user();
+        break;
+    case 'formulaires':
+        require 'vueUser/GestionFormulaires.php';
+        break;
+    case 'reponseFormulaire':
+        require 'vueUser/ReponseFormulaire.php';
+        $var = new Controller();
+        $var->enregistrerResultat();
         break;
     default:
         require 'view/erreur.php';

@@ -15,6 +15,7 @@ switch ($route){
     case 'formulaires':
         require 'vueAdmin/GestionFormulaires.php';
         break;
+    
     default:
         require 'view/erreur.php';
         break;

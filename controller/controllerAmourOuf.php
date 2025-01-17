@@ -56,7 +56,7 @@ class Controller {
     }
     public function afficherTousLesUsers() {
         $users = $this->model->get_all_users(); 
-        //include_once 'view/todolist.php';
+        include_once 'view/todolist.php';
         return $users;
     }
     public function enregistrerResultat() {
