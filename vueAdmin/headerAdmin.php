@@ -23,7 +23,7 @@
         </article>
 
         <article>
-            <a href="./vueAdmin/connexionAdmin.php">
+            <a href="./vueAdmin/ConnexionAdmin.php">
                 <img src="./vueAdmin/CSS/photo_bonhomme_site.png" alt ="bonhomme pour s'inscrire">
             </a>
         </article>

@@ -27,8 +27,7 @@ if (isset($_GET['id'])) {
 </head>
 <body>
     <h1>Gestion des formulaires</h1>
-    <a href="?route=voirUsers">Voir Users</a>
-    <div class="test">
+    <a href="voirUsers.php">Voir les utilisateurs</a>
         <div class="test-title">Test 1 : Test de compatibilité amoureuse</div>
         <div class="test-options">
             <a href="../vueAdmin/FormAdmin.php">Voir le test</a>

@@ -1,3 +1,9 @@
+<?php
+require '/TD-Web-EFREI-Groupe3/controller/controllerAmourOuf.php';
+$users = new Controller();
+$users->get_all_users();
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
