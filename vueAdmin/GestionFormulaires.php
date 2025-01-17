@@ -24,6 +24,7 @@ if (isset($_GET['id_user'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des formulaires</title>
+    <link rel="stylesheet" href="CSS/GestionFormulaire.css">
 </head>
 <body>
     <h1>Gestion des formulaires</h1>
