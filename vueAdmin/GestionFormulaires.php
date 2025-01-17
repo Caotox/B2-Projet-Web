@@ -1,6 +1,7 @@
 <?php
 require_once '../controller/GestionFormController.php';
 require_once '../controller/GestionUsersController.php';
+require_once 'headerAdmin.php';
 
 $userController = new UserController();
 $formulaireController = new GestionFormulairesController();
@@ -80,5 +81,6 @@ if (isset($_GET['id_user'])) {
             <?php endif; ?>
         <?php endif; ?>
     </div>
+                <?php require_once 'footerAdmin.php' ?> 
 </body>
 </html>
