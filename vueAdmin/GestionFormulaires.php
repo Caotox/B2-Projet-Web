@@ -6,7 +6,6 @@ require_once 'headerAdmin.php';
 $userController = new UserController();
 $formulaireController = new GestionFormulairesController();
 
-
 $users = [];
 if (isset($_GET['action']) && $_GET['action'] === 'voirUsers') {
     $users = $userController->afficherTousLesUsers(); 
@@ -15,7 +14,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'voirUsers') {
 
 $resultats = null;
 if (isset($_GET['id_user'])) {
-    $resultats = $formulaireController->afficherResultats($_GET['id_user']);
+    $resultats = $formulaireController->afficherResultats($_SESSION['id_user']);
 }
 ?>
 
