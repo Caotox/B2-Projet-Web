@@ -74,3 +74,24 @@ h1#title {
     transform: translateY(-2px);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
+
+.love-advice-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-love-advice {
+    display: inline-block;
+    background-color: #EFBFDD;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-love-advice:hover {
+    background-color: #EFBFDD;
+    transform: scale(1.1);
+}

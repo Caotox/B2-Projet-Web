@@ -1,0 +1,131 @@
+body {
+    background-color: #FEF7FB;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #D63384;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #D63384;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#love-tips {
+    margin: 20px 0;
+}
+
+#love-tips h2 {
+    font-size: 2em;
+    color: #D63384;
+    margin-bottom: 15px;
+}
+
+#love-tips .btn {
+    background-color: #D63384;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#love-tips .btn:hover {
+    background-color: #e04a9d;
+}
+
+#love-tips .tip {
+    margin-top: 15px;
+    font-size: 1.3em;
+    color: #555;
+    font-style: italic;
+}
+
+#love-coaches {
+    padding: 20px;
+}
+
+#love-coaches h2 {
+    font-size: 2em;
+    color: #D63384;
+    margin-bottom: 15px;
+}
+
+.coach-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.coach {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coach:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.coach img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.coach h3 {
+    font-size: 1.5em;
+    color: #D63384;
+    margin-bottom: 10px;
+}
+
+.coach p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.coach button {
+    background-color: #D63384;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.coach button:hover {
+    background-color: #e04a9d;
+}
+
+.rendez-vous {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #28a745;
+    font-weight: bold;
+}

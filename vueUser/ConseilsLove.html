@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conseils d'amour et coachs LOVE</title>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
+    <link rel="stylesheet" href="CSS/CoachLove.css">
+</head>
+<body>
+    <header>
+        <h1>Vos Conseils d'Amour et Coachs LOVE</h1>
+        <p>Découvrez des conseils personnalisés et prenez rendez-vous avec nos experts en amour !</p>
+    </header>
+
+    <main x-data="{ selectedCoach: null, tips: ['Communiquez ouvertement', 'Soyez attentif aux besoins de votre partenaire', 'Cultivez la confiance et le respect mutuel'], showTip: false }">
+        <!-- Conseils d'amour -->
+        <section id="love-tips">
+            <h2>Conseils d'Amour</h2>
+            <button @click="showTip = !showTip" class="btn">Afficher un conseil</button>
+            <template x-if="showTip">
+                <p class="tip" x-text="tips[Math.floor(Math.random() * tips.length)]"></p>
+            </template>
+        </section>
+
+        <!-- Coachs Love -->
+        <section id="love-coaches">
+            <h2>Nos Coachs LOVE</h2>
+            <div class="coach-grid">
+                <article class="coach" x-data="{ name: 'Jessica', bio: 'Spécialiste en relations modernes.', selected: false }" @click="selectedCoach = name" :class="{ active: selectedCoach === name }">
+                    <img src="CSS/mia_khalifa.jpg" alt="Jessica">
+                    <h3 x-text="name"></h3>
+                    <p x-text="bio"></p>
+                    <button @click.stop="selected = !selected">Prendre Rendez-vous</button>
+                    <template x-if="selected">
+                        <p class="rendez-vous">Rendez-vous pris avec Jessica !</p>
+                    </template>
+                </article>
+
+                <article class="coach" x-data="{ name: 'Antoine', bio: 'Expert en reconquête amoureuse.', selected: false }" @click="selectedCoach = name" :class="{ active: selectedCoach === name }">
+                    <img src="CSS/rocco_siffredi.jpg" alt="Antoine">
+                    <h3 x-text="name"></h3>
+                    <p x-text="bio"></p>
+                    <button @click.stop="selected = !selected">Prendre Rendez-vous</button>
+                    <template x-if="selected">
+                        <p class="rendez-vous">Rendez-vous pris avec Antoine !</p>
+                    </template>
+                </article>
+
+                <article class="coach" x-data="{ name: 'Yanis', bio: 'Conseiller en développement personnel et amour durable.', selected: false }" @click="selectedCoach = name" :class="{ active: selectedCoach === name }">
+                    <img src="CSS/johnny_sins_site.jpg" alt="Yanis">
+                    <h3 x-text="name"></h3>
+                    <p x-text="bio"></p>
+                    <button @click.stop="selected = !selected">Prendre Rendez-vous</button>
+                    <template x-if="selected">
+                        <p class="rendez-vous">Rendez-vous pris avec Yanis !</p>
+                    </template>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Conseils d'Amour et Coachs LOVE. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

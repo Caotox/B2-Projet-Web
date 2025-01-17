@@ -79,3 +79,7 @@ if (isset($_GET['resultat'])) {
 //$var->enregistrerResultat();
 
 ?>
+
+<div class="love-advice-button">
+            <a href="ConseilsLove.html" class="btn-love-advice">Si vous voulez des conseils en amour, cliquez-ici !</a>
+</div>
