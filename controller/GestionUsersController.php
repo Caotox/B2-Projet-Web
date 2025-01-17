@@ -18,10 +18,13 @@ class UserController {
         return $users;
     }
     public function supprimerUser() {
-        if (isset($_POST['delete_user_id'])) {
+        if (isset($_POST['delete_user_id']) && is_numeric($_POST['delete_user_id'])) {
             $id = $_POST['delete_user_id'];
-            $this->model->deleteUser($id);
+            $this->model->delete_user($id);
+        } else {
+            echo "ID invalide ou non fourni.";
         }
     }
+    
 }
 ?>
