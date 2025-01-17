@@ -68,7 +68,7 @@ form input[type="password"] {
 
 form input[type="email"]:focus,
 form input[type="password"]:focus {
-    border-color: #EFBFDD;
+    border-color: #E6E7FF;
     outline: none;
     box-shadow: 0 0 5px rgba(214, 51, 132, 0.5);
 }
@@ -93,7 +93,7 @@ form input[type="password"]:focus {
 }
 
 #submitButton input[type="submit"]:hover {
-    background-color: #fcd1e5;
+    background-color: #E6E7FF;
     transform: translateY(-2px);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
