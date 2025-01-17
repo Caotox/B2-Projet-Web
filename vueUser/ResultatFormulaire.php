@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="CSS/ResultatFormulaire.css">
 
 <?php
-
+session_start();
 //require '../controller/controllerAmourOuf.php';
 //$var = new Controller();
 

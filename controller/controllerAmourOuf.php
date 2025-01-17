@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'model/modelAmourOuf.php';
 
 class Controller {
@@ -23,6 +24,7 @@ class Controller {
             echo $email . " " . $mdp;
             $result = $this->model->connexion_user($email, $mdp);
             if ($result['success']) {
+                $_SESSION['id_user'] = $result['id_user'];
                 echo $result['message'];
                 //header('Location: ?route=dashboard');
                 header('Location: vueUser/FormulaireUser.php');
@@ -35,7 +37,6 @@ class Controller {
     public function connexion_admin() {
         include_once 'vueAdmin/ConnexionAdmin.php';
         if (isset($_POST['email']) && isset($_POST['mdp'])) {
-            echo "test";
             $email = $_POST['email'];
             $mdp = $_POST['mdp'];
             echo $email . " " . $mdp;
