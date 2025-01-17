@@ -64,9 +64,9 @@ class Controller {
         if (isset($_POST['comptabilite'], $_POST['degre'])) {
             $comptabilite = $_POST['comptabilite'];
             $degre = $_POST['degre'];
-
+            $id = $_SESSION['id_user'];
             try {
-                $model->send_resultat($comptabilite, $degre); 
+                $model->send_resultat($id, $comptabilite, $degre); 
                 echo "Résultat envoyé";
             } catch (Exception $e) {
                 echo "Erreur";
