@@ -4,14 +4,14 @@
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <title>Header user</title>
-    <link rel="stylesheet" href="./vueAdmin/CSS/headerAdmin.css">
+    <link rel="stylesheet" href="CSS/headerAdmin.css">
 </head>
 
 <header>
     <section id="elem-header-admin">
         <article>
             <a href="./vueAdmin/accueil.php">
-                <img src="./vueAdmin/CSS/photo_chat_site.png" alt="logo">
+                <img src="CSS/photo_chat_site.png" alt="logo">
             </a>
         </article>
 
@@ -24,7 +24,7 @@
 
         <article>
             <a href="./vueAdmin/ConnexionAdmin.php">
-                <img src="./vueAdmin/CSS/photo_bonhomme_site.png" alt ="bonhomme pour s'inscrire">
+                <img src="CSS/photo_bonhomme_site.png" alt ="bonhomme pour s'inscrire">
             </a>
         </article>
     </section>
