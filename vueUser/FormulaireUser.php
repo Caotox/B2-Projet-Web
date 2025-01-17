@@ -3,7 +3,7 @@
 
 <body>
     <h2>Faites notre test de compatibilité amoureuse !</h2>
-    <form id="questionnaire-form" method="POST" action="../script/SoumissionFormulaire.php">
+    <form id="questionnaire-form" method="POST" action="/TD-Web-EFREI-Groupe3/script/SoumissionFormulaire.php">
         <!-- Question 1 -->
         <div class="question" id="1">
             <p>1. Si vous pouviez visiter un musée, lequel choisiriez-vous ?</p>
