@@ -1,6 +1,6 @@
 <?php
 $route = $_GET['route'] ?? 'accueilAdmin';
-echo $route . "\n";
+//echo $route . "\n";
 switch ($route){
     case 'accueilAdmin':
         require 'controller/controllerAmourOuf.php';
