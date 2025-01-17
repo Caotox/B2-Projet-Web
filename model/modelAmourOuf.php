@@ -71,7 +71,7 @@ class Model {
     }
     
     public function delete_user($id){ // Supprimer un user en fonction de son id
-        $user = $this->bdd->prepare('DELETE users WHERE id = ?');
+        $user = $this->bdd->prepare('DELETE FROM users WHERE id = ?');
         $user->execute(array($id));
     }
 

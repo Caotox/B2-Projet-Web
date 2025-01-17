@@ -7,6 +7,7 @@ $userController = new UserController();
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_user_id'])) {
     echo "suppression user";
     $userController->supprimerUser();
+    echo "user supprimé";
 }
 $action = 'voirUsers';
 $users = [];

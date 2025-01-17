@@ -82,9 +82,4 @@ class Controller {
             echo "<h1>Erreur</h1>";
         }
     }
-    public function supprimerUser($id) {
-        $stmt = $this->model->prepare('DELETE FROM users WHERE id_user = :id');
-        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-        $stmt->execute();
-    }
 }
