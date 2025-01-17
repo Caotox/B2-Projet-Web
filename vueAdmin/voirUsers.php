@@ -1,7 +1,15 @@
 <?php
-require '/TD-Web-EFREI-Groupe3/controller/controllerAmourOuf.php';
-$users = new Controller();
-$users->get_all_users();
+require_once '../controller/GestionFormController.php';
+require_once '../controller/GestionUsersController.php';
+
+$userController = new UserController();
+$formulaireController = new GestionFormulairesController();
+$action = 'voirUsers';
+
+$users = [];
+if (isset($_GET['action']) && $_GET['action'] === 'voirUsers') {
+    $users = $userController->afficherTousLesUsers(); 
+}
 
 ?>
 <!DOCTYPE html>
