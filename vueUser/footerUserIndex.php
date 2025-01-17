@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="vueUser/CSS/footerUserIndex.css">
+<link rel="stylesheet" href="vueUser/CSS/footerUser.css">
         
         <footer>
             <section id="footer">
