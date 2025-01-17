@@ -80,6 +80,6 @@ if (isset($_GET['id_user'])) {
             <?php endif; ?>
         <?php endif; ?>
     </div>
-                <?php require_once 'footerAdmin.php' ?> 
+<?php require_once 'footerAdmin.php' ?> 
 </body>
 </html>
