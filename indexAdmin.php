@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'vueUser/headerAdmin.php';
+include 'vueAdmin/headerAdmin.php';
 include 'controller/routesAdmin.php';
-include 'vueUser/footerAdmin.php';
+include 'vueAdmin/footerAdmin.php';
 ?>
