@@ -13,8 +13,8 @@ if (isset($_GET['action']) && $_GET['action'] === 'voirUsers') {
 
 
 $resultats = null;
-if (isset($_GET['id'])) {
-    $resultats = $formulaireController->afficherResultats($_GET['id']); 
+if (isset($_GET['id_user'])) {
+    $resultats = $formulaireController->afficherResultats($_GET['id_user']);
 }
 ?>
 
@@ -46,7 +46,7 @@ if (isset($_GET['id'])) {
                 <tbody>
                     <?php foreach ($users as $user): ?>
                         <tr>
-                            <td><?= htmlspecialchars($user['id']) ?></td>
+                            <td><?= htmlspecialchars($user['id_user']) ?></td>
                             <td><?= htmlspecialchars($user['email']) ?></td>
                             <td>
                                 <a href="GestionFormulaires.php?action=voirUsers&id=<?= htmlspecialchars($user['id']) ?>">Voir</a>
@@ -69,7 +69,7 @@ if (isset($_GET['id'])) {
                     <tbody>
                         <?php foreach ($resultats as $resultat): ?>
                             <tr>
-                                <td><?= htmlspecialchars($resultat['compatibilite']) ?></td>
+                                <td><?= htmlspecialchars($resultat['comptabilite']) ?></td>
                                 <td><?= htmlspecialchars($resultat['id_test']) ?></td>
                             </tr>
                         <?php endforeach; ?>

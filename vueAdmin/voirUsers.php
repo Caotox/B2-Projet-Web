@@ -1,12 +1,10 @@
 <?php
 require_once '../controller/GestionUsersController.php';
-
 $userController = new UserController();
 $action = 'voirUsers';
 
 $users = [];
-if (isset($_GET['action']) && $_GET['action'] === 'voirUsers') {
-    echo "ça passe ici";
+if ($action === 'voirUsers') {
     $users = $userController->afficherTousLesUsers(); 
 }
 
@@ -20,27 +18,17 @@ if (isset($_GET['action']) && $_GET['action'] === 'voirUsers') {
 </head>
 <body>
     <h1>Liste des utilisateurs</h1>
-    <table border="1">
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Email</th>
             </tr>
         </thead>
-        <tbody>
-            <?php if (!empty($users)): ?>
-                <?php foreach ($users as $user): ?>
-                    <tr>
-                        <td><?= htmlspecialchars($user['id_user']) ?></td>
-                        <td><?= htmlspecialchars($user['email']) ?></td>
-                    </tr>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <tr>
-                    <td colspan="2">Aucun utilisateur trouvé.</td>
-                </tr>
-            <?php endif; ?>
-        </tbody>
-    </table>
+        <?php foreach ($users as $user): ?>
+        <tr>
+            <td><?= htmlspecialchars($user['id_user']) ?></td>
+            <td><?= htmlspecialchars($user['email']) ?></td>
+        </tr>
+        <?php endforeach; ?>
 </body>
 </html>
