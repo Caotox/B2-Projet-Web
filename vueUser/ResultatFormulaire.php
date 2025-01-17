@@ -43,7 +43,7 @@ function AfficherResultat($resultat) {
                 echo "<br>";
                 echo "<p>
                         <em> 
-                            Dans la douceur du crépuscule, elle apparaît comme une vision. Ses yeux, reflets d'un ciel étoilé, racontent mille histoires silencieuses. Chaque geste est une danse, chaque mot une mélodie. Elle porte en elle la grâce d'un printemps éternel, faisant fleurir l'amour sur son passage. Son sourire, tel un rayon de soleil, réchauffe les cœurs les plus froids. Auprès d'elle, le temps suspend son vol, et le monde entier semble s'arrêter pour l'admire
+                            Dans les terres desolées de la Terre du milieu, vivait une créature au milieu des rochers et des forêts boisées. Et non je ne parle pas de Gollum, je parle bien de Jessica. Elle se nourrit à longueur de journées de poisson frais et de tulipes. Elle adore aussi les pizzas (sans viande) mais préfère bouffer de l'herbe all day long. Bref avec elle, vous vous ennuirez toute la nuit, puisqu'elle voudra vous faire écrire son texte à sa place.
                         </em>
                     </p>";
                 echo "<a href='FormulaireUser.php'>Recommencer</a>";
