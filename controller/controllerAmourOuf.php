@@ -54,6 +54,11 @@ class Controller {
         $users = $this->model->get_all_users(); 
         include_once 'vueUser/voirUsers.php';
     }
+    public function afficherTousLesUsers() {
+        $users = $this->model->get_all_users(); 
+        //include_once 'view/todolist.php';
+        return $users;
+    }
     public function enregistrerResultat() {
         if (isset($_POST['comptabilite'], $_POST['degre'])) {
             $comptabilite = $_POST['comptabilite'];
