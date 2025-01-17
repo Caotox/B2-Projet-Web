@@ -52,6 +52,22 @@ class Controller {
     }
     public function get_all_users() {
         $users = $this->model->get_all_users(); 
-        include_once 'view/todolist.php';
+        include_once 'vueUser/voirUsers.php';
+    }
+    public function enregistrerResultat() {
+        if (isset($_POST['comptabilite'], $_POST['degre'])) {
+            $comptabilite = $_POST['comptabilite'];
+            $degre = $_POST['degre'];
+
+            try {
+                $model->send_resultat($comptabilite, $degre); 
+                echo "Résultat envoyé";
+            } catch (Exception $e) {
+                echo "Erreur";
+                echo "Une erreur est survenue lors de l'enregistrement : " . $e->getMessage() . "";
+            }
+        } else {
+            echo "<h1>Erreur</h1>";
+        }
     }
 }

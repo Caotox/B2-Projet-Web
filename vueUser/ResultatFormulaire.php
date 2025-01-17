@@ -2,8 +2,13 @@
 
 <?php
 
+//require '../controller/controllerAmourOuf.php';
+//$var = new Controller();
+
 function AfficherResultat($resultat) {
     if ($resultat == 'Antoine') {
+        $comptabilite=3;
+        $degre=1;
         echo "<section class ='boxResultat'>";
             echo "<article class= 'elemInResult'>";
                 echo "<h1 id='title'>Votre êtes plus proche que vous ne le pensez avec votre âme sœur</h1>";
@@ -20,6 +25,8 @@ function AfficherResultat($resultat) {
         echo "</section>";
 
     } elseif ($resultat == 'Yanis') {
+        $comptabilite=2;
+        $degre=1;
         echo "<section class ='boxResultat'>";
             echo "<article class= 'elemInResult'>";
                 echo "<h1 id='title'>Votre êtes plus proche que vous ne le pensez avec votre âme sœur</h1>";
@@ -35,6 +42,8 @@ function AfficherResultat($resultat) {
             echo "</article>";
         echo "</section>";
     } elseif ($resultat == 'Jessica') {
+        $comptabilite=1;
+        $degre=1;
         echo "<section class ='boxResultat'>";
         echo "<article class= 'elemInResult'>";
             echo "<h1 id='title'>Votre êtes plus proche que vous ne le pensez avec votre âme sœur</h1>";
@@ -66,6 +75,8 @@ if (isset($_GET['resultat'])) {
     echo "<p>Aucun résultat trouvé.</p>";
     echo "<a href='FormulaireUser.php'>Retour au formulaire</a>";
 } 
+
+//$var->enregistrerResultat();
 
 ?>
 
