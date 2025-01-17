@@ -1,7 +1,7 @@
 <?php
 require_once '../controller/GestionFormController.php';
 require_once '../controller/GestionUsersController.php';
-require_once 'headerAdmin.php';
+include 'headerAdmin.php';
 
 $userController = new UserController();
 $formulaireController = new GestionFormulairesController();

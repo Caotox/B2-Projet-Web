@@ -11,7 +11,7 @@
     <section id="elem-header-admin">
         <article>
             <a href="./vueAdmin/accueil.php">
-                <img src="vueAdmin/CSS/photo_chat_site.png" alt="logo">
+                <img src="CSS/photo_chat_site.png" alt="logo">
             </a>
         </article>
 
@@ -24,7 +24,7 @@
 
         <article>
             <a href="./vueAdmin/ConnexionAdmin.php">
-                <img src="vueAdmin/CSS/photo_bonhomme_site.png" alt ="bonhomme pour s'inscrire">
+                <img src="CSS/photo_bonhomme_site.png" alt ="bonhomme pour s'inscrire">
             </a>
         </article>
     </section>
