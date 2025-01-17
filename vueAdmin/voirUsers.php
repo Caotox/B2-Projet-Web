@@ -1,9 +1,11 @@
 <?php
 require_once '../controller/GestionUsersController.php';
+require_once '../controller/controllerAmourOuf.php';
 $userController = new UserController();
+$control = new Controller();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_user_id'])) {
-    $userController->supprimerUser((int)$_POST['delete_user_id']);
+    $control->supprimerUser((int)$_POST['delete_user_id']);
 }
 $action = 'voirUsers';
 $users = [];
