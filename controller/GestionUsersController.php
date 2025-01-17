@@ -17,5 +17,11 @@ class UserController {
         //include_once 'view/todolist.php';
         return $users;
     }
+    public function supprimerUser() {
+        if (isset($_POST['delete_user_id'])) {
+            $id = $_POST['delete_user_id'];
+            $this->model->deleteUser($id);
+        }
+    }
 }
 ?>
