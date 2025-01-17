@@ -19,16 +19,11 @@ if ($action === 'voirUsers') {
 </head>
 <body>
     <h1>Liste des utilisateurs</h1>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Email</th>
-            </tr>
-        </thead>
+
         <?php foreach ($users as $user): ?>
         <tr>
-            <td><?= htmlspecialchars($user['id_user']) ?></td>
-            <td><?= htmlspecialchars($user['email']) ?></td>
+            <td>ID : <?= htmlspecialchars($user['id_user']) ?>    </td>
+            <td>Email : <?= htmlspecialchars($user['email']) ?>   </br></br></td>
         </tr>
         <?php endforeach; ?>
 </body>
