@@ -21,7 +21,6 @@ class Controller {
         if (isset($_POST['email']) && isset($_POST['mdp'])) {
             $email = $_POST['email'];
             $mdp = $_POST['mdp'];
-            echo $email . " " . $mdp;
             $result = $this->model->connexion_user($email, $mdp);
             if ($result['success']) {
                 $_SESSION['id_user'] = $result['id_user'];

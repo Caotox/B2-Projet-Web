@@ -79,5 +79,3 @@ if (isset($_GET['resultat'])) {
 //$var->enregistrerResultat();
 
 ?>
-
- <!-- faire le FRONT END de la page de résultat -->
