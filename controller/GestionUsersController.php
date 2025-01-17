@@ -19,7 +19,9 @@ class UserController {
     }
     public function supprimerUser() {
         if (isset($_POST['delete_user_id']) && is_numeric($_POST['delete_user_id'])) {
+            echo "suppression user controller";
             $id = $_POST['delete_user_id'];
+            echo $id;
             $this->model->delete_user($id);
         } else {
             echo "ID invalide ou non fourni.";
