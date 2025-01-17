@@ -14,7 +14,11 @@ if (isset($_GET['action']) && $_GET['action'] === 'voirUsers') {
 
 $resultats = null;
 if (isset($_GET['id_user'])) {
+<<<<<<< HEAD
     $resultats = $formulaireController->afficherResultats($_GET['id_user']);
+=======
+    $resultats = $formulaireController->afficherResultats($_GET['id_user']); 
+>>>>>>> refs/remotes/origin/main
 }
 ?>
 
@@ -24,6 +28,7 @@ if (isset($_GET['id_user'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des formulaires</title>
+    <link rel="stylesheet" href="CSS/GestionFormulaire.css">
 </head>
 <body>
     <h1>Gestion des formulaires</h1>

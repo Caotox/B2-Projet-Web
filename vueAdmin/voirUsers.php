@@ -1,5 +1,9 @@
 <?php
 require_once '../controller/GestionUsersController.php';
+<<<<<<< HEAD
+=======
+echo "yessss";
+>>>>>>> refs/remotes/origin/main
 $userController = new UserController();
 $action = 'voirUsers';
 
@@ -28,6 +32,12 @@ if ($action === 'voirUsers') {
         <tr>
             <td><?= htmlspecialchars($user['id_user']) ?></td>
             <td><?= htmlspecialchars($user['email']) ?></td>
+<<<<<<< HEAD
+=======
+            <td>
+                <a href="GestionFormulaires.php?action=voirUsers&id=<?= htmlspecialchars($user['id']) ?>">Voir</a>
+            </td>
+>>>>>>> refs/remotes/origin/main
         </tr>
         <?php endforeach; ?>
 </body>
