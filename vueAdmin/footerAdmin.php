@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="vueAdmin/CSS/footerAdmin.css">
+<link rel="stylesheet" href="CSS/footerAdmin.css">
         
         <footer>
             <section id="footer">
