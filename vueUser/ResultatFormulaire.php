@@ -1,3 +1,7 @@
+<?php 
+include 'headerUser.php';
+?>
+
 <link rel="stylesheet" href="CSS/ResultatFormulaire.css">
 
 <?php
@@ -83,3 +87,7 @@ if (isset($_GET['resultat'])) {
 <div class="love-advice-button">
             <a href="ConseilsLove.html" class="btn-love-advice">Si vous voulez des conseils en amour, cliquez-ici !</a>
 </div>
+
+<?php
+include 'footerUser.php';
+?>
