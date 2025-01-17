@@ -4,7 +4,7 @@
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <title>Header user</title>
-    <link rel="stylesheet" href="vueAdmin/CSS/headerAdmin.css">
+    <link rel="stylesheet" href="CSS/headerAdmin.css">
 </head>
 
 <header>
