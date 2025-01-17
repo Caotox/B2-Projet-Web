@@ -11,7 +11,7 @@
     <section id="elem-header-user">
         <article>
             <a href="../index.php">
-                <img src="vueUser/CSS/photo_chat_site.png" alt="logo">
+                <img src="CSS/photo_chat_site.png" alt="logo">
             </a> 
         </article>
 
@@ -24,7 +24,7 @@
 
         <article>
             <a href="./ConnexionUser.php">
-                <img src="vueUser/CSS/photo_bonhomme_site.png" alt ="bonhomme pour s'inscrire">
+                <img src="CSS/photo_bonhomme_site.png" alt ="bonhomme pour s'inscrire">
             </a>
         </article>
     </section>
