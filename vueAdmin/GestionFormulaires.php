@@ -14,11 +14,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'voirUsers') {
 
 $resultats = null;
 if (isset($_GET['id_user'])) {
-<<<<<<< HEAD
     $resultats = $formulaireController->afficherResultats($_GET['id_user']);
-=======
-    $resultats = $formulaireController->afficherResultats($_GET['id_user']); 
->>>>>>> refs/remotes/origin/main
 }
 ?>
 
