@@ -59,6 +59,13 @@ class Controller {
         include_once 'view/todolist.php';
         return $users;
     }
+    public function deleteUser() {
+        if (isset($_GET['id'])) {
+            $id = $_GET['id'];
+            $this->model->delete_user($id);
+            header('Location: ?route=voirUsers');
+        }
+    }
     public function enregistrerResultat() {
         if (isset($_POST['comptabilite'], $_POST['degre'])) {
             $comptabilite = $_POST['comptabilite'];

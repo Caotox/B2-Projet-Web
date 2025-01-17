@@ -1,23 +1,23 @@
 CREATE TABLE users (
     id_user SERIAL PRIMARY KEY,
-    email VARCHAR(30),
-    mdp VARCHAR(30),
+    email VARCHAR(30) UNIQUE NOT NULL,
+    mdp VARCHAR(30) NOT NULL,
 );
 
 CREATE TABLE reponses (
     id_user INT REFERENCES users(id_user),
-    comptabilite INT,
-    degre INT
+    comptabilite INT NOT NULL,
+    degre INT NOT NULL
 );
 
 CREATE TABLE tests (
     id_test SERIAL PRIMARY KEY,
-    nom_test VARCHAR(30),
-    description VARCHAR(50)
+    nom_test VARCHAR(30) UNIQUE NOT NULL,
+    description VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE admins (
     id_admin SERIAL PRIMARY KEY,
-    email_admin VARCHAR(30),
-    mdp_admin VARCHAR(30)
+    email_admin VARCHAR(30) UNIQUE NOT NULL,
+    mdp_admin VARCHAR(30) NOT NULL
 );
