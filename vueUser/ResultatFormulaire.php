@@ -2,7 +2,7 @@
 
 <?php
 session_start();
-//require '../controller/controllerAmourOuf.php';
+//require '..controller/controllerAmourOuf.php';
 //$var = new Controller();
 
 function AfficherResultat($resultat) {
